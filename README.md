@@ -1,6 +1,6 @@
 # Le Chimère
 
-Let there be a source text T:.
+Let there be a source text T.
 We empty it of its nouns, its adjectives, and its verbs, however marking the place of each noun,
 adjective and verb. The result is called a “mold”. It is also said that the text is prepared.
 
@@ -11,3 +11,5 @@ by the nouns from S, in the order in which they were extracted;
 same operation for the adjectives of A and the verbs of V. After having corrected,
 as little as possible, to eliminate certain incompatibilities,
 one ends up with an accommodated text, or **chimera**.
+
+(https://lechimere.herokuapp.com)[https://lechimere.herokuapp.com]
