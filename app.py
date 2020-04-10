@@ -60,7 +60,7 @@ def extract_noun_list(s: str) -> List[str]:
     tagged_text = nltk.pos_tag(tokenized_text)
     noun_list = []
     for i, tag in enumerate(tagged_text):
-        if tag[0] in ['\n', 'o\'er']:
+        if tag[0] in ['\n', 'o\'er', '”']:
             continue
         if tag[1] == 'NN':
             noun_list.append(tag[0])
