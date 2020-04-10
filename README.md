@@ -12,4 +12,4 @@ same operation for the adjectives of A and the verbs of V. After having correcte
 as little as possible, to eliminate certain incompatibilities,
 one ends up with an accommodated text, or **chimera**.
 
-(https://lechimere.herokuapp.com)[https://lechimere.herokuapp.com]
+[https://lechimere.herokuapp.com](https://lechimere.herokuapp.com)
