@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>La Chimère</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <br>
+    <div class="container">
+
+      <div class="row">
+        <h1 class="text-center">La Chimère</h1>
+      </div>
+
+      <div class="row">
+        <p>
+          Let there be a source text T: 
+          We empty it of its nouns, its adjectives, and its verbs, however marking the place of each noun,
+          adjective and verb. The result is called a “mold”. It is also said that the text is prepared.
+          <br><br>
+          Let there be three target texts, S, A, V:
+          We extract the nouns from S, the adjectives from A, the verbs from V.
+          Using the prepared text T we replace the nouns deleted in T
+          by the nouns from S, in the order in which they were extracted;
+          same operation for the adjectives of A and the verbs of V.
+          <br><br>After having corrected,
+          as little as possible, to eliminate certain incompatibilities,
+          one ends up with an accommodated text, or chimera.
+        </p>
+      </div>
+
+        {% if result %}
+          <div class="row">
+            <h1> Result: </h1>
+          </div>
+          <div class="row">
+          <p style='white-space:pre'>
+            {{ result }}
+          </p>
+          <br>
+      </div>
+        {% endif %}
+
+    {% block content %}
+      <div class="row">
+        <h3>Generate La Chimère:</h3>
+      </div>
+
+
+
+      <div class="row">
+        <form action="" method="post" novalidate>
+          {{ form.hidden_tag() }}
+          <p>
+              {{ form.source_text.label }}<br>
+              {{ form.source_text(rows=10, cols=50) }}
+          </p>
+          <p>
+              {{ form.adjective_text.label }}<br>
+              {{ form.adjective_text(rows=10, cols=50) }}
+          </p>
+          <p>
+              {{ form.verb_text.label }}<br>
+              {{ form.verb_text(rows=10, cols=50) }}
+          </p>
+          <p>
+              {{ form.noun_text.label }}<br>
+              {{ form.noun_text(rows=10, cols=50) }}
+          </p>
+          <p>{{ form.submit() }}</p>
+        </form>
+      </div>
+
+    {% endblock %}
+      
+      </div>
+
+  </div>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   	<script src="../static/script.js"></script>
+  </body>
+</html>
