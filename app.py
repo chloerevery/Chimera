@@ -27,6 +27,7 @@ import os
 app = Flask(__name__)
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
+nltk.download('averaged_perceptron_tagger')
 
 class ChimeraForm(FlaskForm):
     source_text = StringField('Source text:',[
