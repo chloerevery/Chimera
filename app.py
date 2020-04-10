@@ -170,3 +170,5 @@ def generate_chimera(source_text, noun_text, verb_text, adjective_text) -> str:
     print(f'Combined file: \n {new_text}')
     return new_text
 
+if __name__ == '__main__':
+    app.run()
