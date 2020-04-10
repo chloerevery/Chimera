@@ -3,3 +3,4 @@ pros_cons
 reuters
 universal_tagset
 stopwords
+punkt
